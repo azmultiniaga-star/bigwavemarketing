@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from '../ui/Button';
 
 export const Navbar = () => {
@@ -7,8 +8,15 @@ export const Navbar = () => {
         <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
             <div className="container mx-auto px-4 md:px-6 h-20 flex items-center justify-between">
                 {/* Logo */}
-                <Link href="/" className="text-2xl font-serif font-bold text-primary">
-                    BigWave<span className="text-cta">.</span>
+                <Link href="/" className="flex items-center">
+                    <Image
+                        src="/bigwave-logo.png"
+                        alt="BigWave Marketing"
+                        width={200}
+                        height={50}
+                        priority
+                        className="h-10 w-auto"
+                    />
                 </Link>
 
                 {/* Desktop Navigation */}

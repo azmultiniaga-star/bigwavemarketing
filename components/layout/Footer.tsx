@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const Footer = () => {
     return (
@@ -8,8 +9,14 @@ export const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
                     {/* Brand */}
                     <div className="col-span-1 md:col-span-1">
-                        <Link href="/" className="text-2xl font-serif font-bold text-white mb-4 block">
-                            BigWave<span className="text-cta">.</span>
+                        <Link href="/" className="mb-4 block">
+                            <Image
+                                src="/bigwave-logo.png"
+                                alt="BigWave Marketing"
+                                width={200}
+                                height={50}
+                                className="h-10 w-auto brightness-0 invert"
+                            />
                         </Link>
                         <p className="text-gray-400 text-sm leading-relaxed">
                             We help brands achieve stronger, more predictable growth through strategic advertising and data-driven marketing.
