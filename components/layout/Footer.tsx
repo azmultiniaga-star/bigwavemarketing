@@ -15,7 +15,7 @@ export const Footer = () => {
                                 alt="BigWave Marketing"
                                 width={200}
                                 height={50}
-                                className="h-10 w-auto brightness-0 invert"
+                                className="h-10 w-auto"
                             />
                         </Link>
                         <p className="text-gray-400 text-sm leading-relaxed">
