@@ -11,7 +11,7 @@ export const Footer = () => {
                     <div className="col-span-1 md:col-span-1">
                         <Link href="/" className="mb-4 block">
                             <Image
-                                src="/bigwave-logo.png"
+                                src="/bigwave-logo-white.png"
                                 alt="BigWave Marketing"
                                 width={200}
                                 height={50}
